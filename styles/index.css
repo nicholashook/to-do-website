@@ -1,0 +1,114 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Urbanist, Arial;
+  background-image: url("../images/city1.jpg");
+  color: rgb(18, 8, 1);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  
+}
+h1 {
+  margin: 0;
+  font-size: 55px;
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(5px);
+  padding: 10px 50px;
+  border-radius: 6px;
+  font-weight: 100;
+}
+p {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+::placeholder {
+  color: rgb(18, 8, 1); 
+}
+.input-section {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+.input-bar, .delete-button {
+  font-family: Urbanist, Arial;
+  font-weight: 100;
+  border: none;
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(5px);
+  color: rgb(6, 3, 0);
+  font-size: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 16px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.input-bar:focus {
+  outline: none;
+  border: none;
+  backdrop-filter: blur(2px);
+}
+.input-button {
+  font-family: Urbanist, Arial;
+  font-weight: 100;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(3px);
+  color: rgba(255, 255, 255, 0.51);
+  font-size: 30px;
+  padding: 4px 10px;
+  transition: 0.15s;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+.input-button:hover {
+  backdrop-filter: blur(1px);
+}
+.input-button:active {
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(5px);
+  color: rgb(18, 8, 1);
+}
+.delete-button{
+  font-size: 30px;
+  font-weight: 100;
+  padding: 4px 8px;
+}
+.delete-button:hover {
+  backdrop-filter: blur(2px);
+}
+.task-row {
+  display: flex;
+  padding-bottom: 12px;
+  justify-content: center;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.rights {
+  font-family: Urbanist, Arial;
+  font-weight: 100;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(3px);
+  color: rgba(255, 255, 255, 0.51);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
