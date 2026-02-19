@@ -56,12 +56,15 @@ main {
   border-radius: 4px;
   transition: 0.3s;
 }
+input-bar {
+  width: 440px;
+}
 .input-bar:focus {
   outline: none;
   border: none;
   backdrop-filter: blur(2px);
 }
-.input-button {
+.input-button, .clear-all-button {
   font-family: Urbanist, Arial;
   font-weight: 100;
   border: none;
@@ -69,16 +72,17 @@ main {
   backdrop-filter: blur(3px);
   color: rgba(255, 255, 255, 0.51);
   font-size: 30px;
-  padding: 4px 10px;
+  padding: 4px 8px;
   transition: 0.15s;
   cursor: pointer;
   margin-left: 10px;
   border-radius: 4px;
+  margin-right: -8px;
 }
-.input-button:hover {
+.input-button:hover, .clear-all-button:hover {
   backdrop-filter: blur(1px);
 }
-.input-button:active {
+.input-button:active, .clear-all-button:active {
   background-color: rgb(255 255 255 / 30%);
   backdrop-filter: blur(5px);
   color: rgb(18, 8, 1);
@@ -87,9 +91,21 @@ main {
   font-size: 30px;
   font-weight: 100;
   padding: 4px 8px;
+  transition: 0.1s;
+  max-width: 280px;
+  height: auto;
+  overflow-wrap: break-word;
 }
 .delete-button:hover {
   backdrop-filter: blur(2px);
+}
+.task-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.task-column:only-child {
+  grid-column: 2/3;
 }
 .task-row {
   display: flex;
@@ -100,6 +116,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 8px;
+  margin-top: 16px;
 }
 .rights {
   font-family: Urbanist, Arial;
