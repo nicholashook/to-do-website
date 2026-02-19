@@ -21,7 +21,6 @@ document.body.querySelector('.clear-all-button')
     displayTasks();
   })
 
-
 document.body.querySelector('.input-button')
   .addEventListener('click', () => {
     addTask();

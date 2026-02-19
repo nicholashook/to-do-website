@@ -88,11 +88,9 @@ input-bar {
   color: rgb(18, 8, 1);
 }
 .delete-button{
-  font-size: 30px;
-  font-weight: 100;
   padding: 4px 8px;
   transition: 0.1s;
-  max-width: 280px;
+  max-width: 340px;
   height: auto;
   overflow-wrap: break-word;
 }
@@ -101,8 +99,8 @@ input-bar {
 }
 .task-section {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
 }
 .task-column:only-child {
   grid-column: 2/3;
@@ -128,4 +126,20 @@ footer {
   font-size: 12px;
   padding: 4px 10px;
   border-radius: 4px;
+}
+
+@media (max-width: 1000px) {
+  .task-section {
+    gap: 30px;
+  }
+  .delete-button {
+    max-width: 280px;
+  }
+}
+
+
+@media (max-width: 730px) {
+  .task-section {
+    grid-template-columns: 1fr;
+  }
 }
