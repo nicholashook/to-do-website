@@ -39,9 +39,11 @@ function addTask() {
 
 function displayTasks() {
   let taskString = `<div class='task-column'>`;
+  let twoCol = false;
   tasks.taskList.forEach( (taskItem, index) => {
     if (index % 7 === 0 && index !== 0) {
       taskString += `<div class='task-column'>`;
+      twoCol = true;
     }
     taskString += 
       `<div class='task-row'>
@@ -51,9 +53,13 @@ function displayTasks() {
       </div>`;
     if ((index + 1) % 7 === 0 || index + 1 === tasks.taskList.length) {
       taskString += `</div>`;
-      console.log(index)
     }
   });
+  if (twoCol) {
+    document.body.querySelector('.task-section').classList.add('task-section-large')
+  } else {
+    document.body.querySelector('.task-section').classList.remove('task-section-large')
+  }
   document.querySelector('.task-section').innerHTML = taskString;
   document.querySelectorAll('.delete-button')
     .forEach((element, index) => {

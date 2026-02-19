@@ -97,10 +97,10 @@ input-bar {
 .delete-button:hover {
   backdrop-filter: blur(2px);
 }
-.task-section {
+.task-section-large {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 0px 80px;
 }
 .task-column:only-child {
   grid-column: 2/3;
@@ -129,8 +129,8 @@ footer {
 }
 
 @media (max-width: 1000px) {
-  .task-section {
-    gap: 30px;
+  .task-section-large {
+    gap: 0px 30px;
   }
   .delete-button {
     max-width: 280px;
@@ -139,7 +139,7 @@ footer {
 
 
 @media (max-width: 730px) {
-  .task-section {
+  .task-section-large {
     grid-template-columns: 1fr;
   }
 }
