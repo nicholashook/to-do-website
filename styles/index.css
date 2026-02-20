@@ -92,7 +92,7 @@ input-bar {
   transition: 0.1s;
   max-width: 340px;
   height: auto;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 .delete-button:hover {
   backdrop-filter: blur(2px);
@@ -141,5 +141,11 @@ footer {
 @media (max-width: 730px) {
   .task-section-large {
     grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  .input-bar, .delete-button, .input-button, .clear-all-button {
+    font-size: 21px;
   }
 }
